@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology"
+     xml:base="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Prerequisite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Prerequisite">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isPrerequisiteOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#completedCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#completedCourse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isEquivalentTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isEquivalentTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isPrerequisiteOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isPrerequisiteOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isTaughtBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isTeaching"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Professor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isTeaching -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#isTeaching">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Professor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#offeredSem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#offeredSem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#offeringDept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#offeringDept">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#slottedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#slottedAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#EmpId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#EmpId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Professor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#RollNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#RollNo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemNo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#firstName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#hasCredit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#hasCredit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#lastName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#offeredYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#offeredYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#ASlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#ASlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#BSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#BSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Department"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#EE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Department"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#EE"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Elective"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Department"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#DSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#DSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Department">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#EE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#EE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#ESlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#ESlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Elective -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Elective">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Even -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Even">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Odd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#FSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#FSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#GSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#GSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#HSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#HSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#ISlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#ISlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#KSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#KSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#LSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#LSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Odd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Odd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#PSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#PSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#QSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#QSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#RSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#RSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#SemType">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#TSlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#TSlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
