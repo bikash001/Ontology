@@ -120,6 +120,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#BranchOfStudy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#BranchOfStudy"/>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE">
@@ -143,6 +149,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Elective"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Lab"/>
     </owl:Class>
     
 
@@ -157,6 +164,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#DSlot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Data_Science -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Data_Science">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#BranchOfStudy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Theoretical_Computer_Science"/>
     </owl:Class>
     
 
@@ -188,6 +205,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Elective">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Lab"/>
     </owl:Class>
     
 
@@ -244,7 +262,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2017">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Semester"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JULY-NOV-2016"/>
     </owl:Class>
     
 
@@ -297,11 +314,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Lab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Lab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Course"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#MA -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#MA">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Department"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#NoOfCredits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#NoOfCredits"/>
     
 
 
@@ -349,10 +380,51 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#BranchOfStudy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Theoretical_Computer_Science"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#TSlot -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#TSlot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Slot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Theoretical_Computer_Science -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Theoretical_Computer_Science">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#BranchOfStudy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#2Credits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#2Credits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#NoOfCredits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#NoOfCredits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#4Credits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#4Credits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#NoOfCredits"/>
     </owl:Class>
     
 
@@ -375,8 +447,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#FSlot"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JUL-NOV-2014"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits"/>
         <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</course-ontology:SemNo>
-        <course-ontology:hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</course-ontology:hasCredit>
         <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NSN</course-ontology:taughtBy>
     </owl:NamedIndividual>
     
@@ -389,8 +461,128 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2016"/>
-        <course-ontology:hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</course-ontology:hasCredit>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits"/>
         <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jayalal Sarma</course-ontology:taughtBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS2600 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS2600">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#BSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2016"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits"/>
+        <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</course-ontology:SemNo>
+        <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V Kamakoti</course-ontology:taughtBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS2610 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS2610">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2016"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Lab"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#PSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#2Credits"/>
+        <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</course-ontology:SemNo>
+        <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V Kamakoti</course-ontology:taughtBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3200 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3200">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#DSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2017"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits"/>
+        <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</course-ontology:SemNo>
+        <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K Sivalingam</course-ontology:taughtBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3210 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3210">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2017"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Lab"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#QSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#2Credits"/>
+        <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</course-ontology:SemNo>
+        <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K Sivalingam</course-ontology:taughtBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3300 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3300">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JULY-NOV-2016"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits"/>
+        <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</course-ontology:SemNo>
+        <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K Nandivada</course-ontology:taughtBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3310 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3310">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JULY-NOV-2016"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Lab"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#PSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#2Credits"/>
+        <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</course-ontology:SemNo>
+        <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K Nandivada</course-ontology:taughtBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3500 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3500">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Core"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#DSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JULY-NOV-2016"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits"/>
+        <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</course-ontology:SemNo>
+        <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chester Rebeiro</course-ontology:taughtBy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3510 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS3510">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JULY-NOV-2016"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Lab"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#QSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Systems_Engineering"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#2Credits"/>
+        <course-ontology:SemNo rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</course-ontology:SemNo>
+        <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chester Rebeiro</course-ontology:taughtBy>
     </owl:NamedIndividual>
     
 
@@ -402,7 +594,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#ESlot"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Elective"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2017"/>
-        <course-ontology:hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</course-ontology:hasCredit>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#4Credits"/>
         <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chester Rebeiro</course-ontology:taughtBy>
     </owl:NamedIndividual>
     
@@ -416,8 +608,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2017"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#RSlot"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#TSlot"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#4Credits"/>
         <course-ontology:Prerequisite rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CS2200"/>
-        <course-ontology:hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4</course-ontology:hasCredit>
         <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aritra Hazre</course-ontology:taughtBy>
     </owl:NamedIndividual>
     
@@ -430,7 +622,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#CSE"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Elective"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2017"/>
-        <course-ontology:hasCredit rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</course-ontology:hasCredit>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#4Credits"/>
         <course-ontology:taughtBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSK</course-ontology:taughtBy>
     </owl:NamedIndividual>
     
@@ -443,6 +635,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#Elective"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#JAN-MAY-2016"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#MA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits"/>
     </owl:NamedIndividual>
     
 
@@ -455,6 +648,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#2Credits"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#3Credits"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/course-ontology#4Credits"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
