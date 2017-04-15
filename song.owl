@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bikash/ontologies/2017/3/song#"
+     xml:base="http://www.semanticweb.org/bikash/ontologies/2017/3/song"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#band_name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#band_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#genre_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#genre_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#has_bitrate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#has_bitrate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bitrate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#is_artist_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#is_artist_of">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#is_sung_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#is_sung_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#is_sung_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#album -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#album">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#publisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#publisher">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#released_year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#released_year">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#track_title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#track_title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Artist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Assamese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Assamese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bengali -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bengali">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bhojpuri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bhojpuri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bitrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bitrate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Blues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Blues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Classical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Classical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Devotional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Devotional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Disco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Disco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Electronic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Electronic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#English -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#English">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Female_Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Female_Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Artist"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Male_Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Folk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Folk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Gujarati -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Gujarati">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hindi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hindi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hip_hop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hip_hop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Jazz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Jazz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kannada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kannada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Latin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Latin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Malayalam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Malayalam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Male_Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Male_Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Artist"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Marathi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Marathi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Odia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Odia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Punjabi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Punjabi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Rajasthani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Rajasthani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Tamil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Tamil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Telugu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Telugu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Urdu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Urdu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#128_Kbps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#128_Kbps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bitrate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#160_Kbps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#160_Kbps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bitrate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#320_Kbps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#320_Kbps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bitrate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#64_Kbps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#64_Kbps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bitrate"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Assamese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bengali"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bhojpuri"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Devotional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#English"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Gujarati"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hindi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kannada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Malayalam"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Marathi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Punjabi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Rajasthani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Tamil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Telugu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Urdu"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Assamese"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bengali"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Bhojpuri"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#English"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Gujarati"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hindi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kannada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Malayalam"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Marathi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Odia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Punjabi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Rajasthani"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Tamil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Telugu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Urdu"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#128_Kbps"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#160_Kbps"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#320_Kbps"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#64_Kbps"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
