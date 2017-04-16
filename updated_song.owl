@@ -921,10 +921,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Comfortably_Numb">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
-        <bitrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">320 Kbps</bitrate>
-        <file_format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mp3</file_format>
-        <is_instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_instrumental>
-        <song_length rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">414</song_length>
     </owl:NamedIndividual>
     
 
