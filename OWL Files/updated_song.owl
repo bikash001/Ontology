@@ -130,6 +130,7 @@
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#in_playlist -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#in_playlist">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#playlist_contains"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
@@ -829,6 +830,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Alternative -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Alternative">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Apple_Records -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Apple_Records">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Studio"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Arijit_Singh -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Arijit_Singh">
@@ -849,6 +866,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Away_From_The_Sun">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#3_Doors_Down"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Universal_Music_Group"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2002</released_on>
     </owl:NamedIndividual>
     
@@ -898,6 +917,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Chris_Martin">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Vocalist"/>
+        <is_member_of rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Coldplay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Classic_Rock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Classic_Rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
     </owl:NamedIndividual>
     
 
@@ -914,6 +942,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Coda">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Led_Zepplin"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Swan_Song_Records"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1982</released_on>
     </owl:NamedIndividual>
     
@@ -924,6 +954,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Coldplay">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1996</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London, England</origin>
     </owl:NamedIndividual>
     
 
@@ -932,6 +963,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Comfortably_Numb">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <artist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pink_Floyd"/>
+        <in_language rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#English"/>
+        <in_playlist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Evergreen"/>
+        <of_genre rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Classic_Rock"/>
+        <bitrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">320 Kbps</bitrate>
+        <file_format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mp3</file_format>
+        <is_instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_instrumental>
+        <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1979</released_on>
+        <song_length rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">384</song_length>
     </owl:NamedIndividual>
     
 
@@ -997,6 +1037,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Euphoria">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1988</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delhi, India</origin>
     </owl:NamedIndividual>
     
 
@@ -1006,6 +1047,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Evanesence">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1995</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Little Rock, Arkansas, United States</origin>
     </owl:NamedIndividual>
     
 
@@ -1014,6 +1056,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Evergreen">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Playlist"/>
+        <no_of_songs rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</no_of_songs>
     </owl:NamedIndividual>
     
 
@@ -1022,6 +1065,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Favourites">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Playlist"/>
+        <no_of_songs rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</no_of_songs>
     </owl:NamedIndividual>
     
 
@@ -1042,6 +1086,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hard_Rock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hard_Rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hindi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hindi">
@@ -1050,9 +1102,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hip_hops -->
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hip_Hop -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hip_hops">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hip_Hop">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
     </owl:NamedIndividual>
     
@@ -1062,6 +1114,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#In_The_End">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <artist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Linkin_Park"/>
+        <in_language rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#English"/>
+        <in_playlist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Favourites"/>
+        <of_genre rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Alternative"/>
+        <bitrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">320 Kbps</bitrate>
+        <file_format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mp3</file_format>
+        <is_instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_instrumental>
+        <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2001</released_on>
+        <song_length rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">219</song_length>
     </owl:NamedIndividual>
     
 
@@ -1103,6 +1164,15 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kailasa">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2005</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mumbai, India</origin>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kailasa_Records -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kailasa_Records">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Studio"/>
     </owl:NamedIndividual>
     
 
@@ -1111,6 +1181,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kailash_Kher">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Vocalist"/>
+        <is_member_of rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kailasa"/>
     </owl:NamedIndividual>
     
 
@@ -1127,6 +1198,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kryptonite">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <artist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#3_Doors_Down"/>
+        <in_language rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#English"/>
+        <in_playlist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Favourites"/>
+        <of_genre rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Post-grunge"/>
+        <bitrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">320 Kbps</bitrate>
+        <file_format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flac</file_format>
+        <is_instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_instrumental>
+        <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2000</released_on>
+        <song_length rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">235</song_length>
     </owl:NamedIndividual>
     
 
@@ -1143,6 +1223,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Latest">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Playlist"/>
+        <no_of_songs rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</no_of_songs>
     </owl:NamedIndividual>
     
 
@@ -1160,6 +1241,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Led_Zepplin">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1968</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London, England</origin>
     </owl:NamedIndividual>
     
 
@@ -1168,6 +1250,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Let_It_Be">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#The_Beatles"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Apple_Records"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1970</released_on>
     </owl:NamedIndividual>
     
@@ -1178,6 +1262,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Linkin_Park">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1996</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agoura Hills, California, U.S.</origin>
     </owl:NamedIndividual>
     
 
@@ -1203,6 +1288,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Maroon_5">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1994</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Los Angeles, California, United States</origin>
     </owl:NamedIndividual>
     
 
@@ -1211,6 +1297,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Mehfuz">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Euphoria"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Saregama"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2006</released_on>
     </owl:NamedIndividual>
     
@@ -1220,6 +1308,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Meteora">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Linkin_Park"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Warner_Bros."/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2003</released_on>
     </owl:NamedIndividual>
     
@@ -1237,6 +1327,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Mike_Shinoda">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Vocalist"/>
+        <is_member_of rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Linkin_Park"/>
     </owl:NamedIndividual>
     
 
@@ -1257,11 +1348,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Parlophone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Parlophone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Studio"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pink_Floyd -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pink_Floyd">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1965</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">London, England</origin>
     </owl:NamedIndividual>
     
 
@@ -1269,6 +1369,14 @@
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pop -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Post-grunge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Post-grunge">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Genre"/>
     </owl:NamedIndividual>
     
@@ -1294,6 +1402,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Rangeele">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kailasa"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Kailasa_Records"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2012</released_on>
     </owl:NamedIndividual>
     
@@ -1307,20 +1417,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Samar_Sanam -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Samar_Sanam">
-        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
-        <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2011</released_on>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Sanam -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Sanam">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1992</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mumbai, India</origin>
     </owl:NamedIndividual>
     
 
@@ -1329,6 +1431,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Sanam_Puri">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Vocalist"/>
+        <is_member_of rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Sanam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Saregama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Saregama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Studio"/>
     </owl:NamedIndividual>
     
 
@@ -1345,6 +1456,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#She_Will_Be_Loved">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <artist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Maroon_5"/>
+        <in_language rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#English"/>
+        <in_playlist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Favourites"/>
+        <of_genre rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pop"/>
+        <bitrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">320 Kbps</bitrate>
+        <file_format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aac</file_format>
+        <is_instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_instrumental>
+        <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2002</released_on>
+        <song_length rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">268</song_length>
     </owl:NamedIndividual>
     
 
@@ -1377,6 +1497,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Stairway_To_Heaven">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <artist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Led_Zepplin"/>
+        <in_language rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#English"/>
+        <in_playlist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Evergreen"/>
+        <of_genre rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hard_Rock"/>
+        <bitrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">320 Kbps</bitrate>
+        <file_format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wav</file_format>
+        <is_instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_instrumental>
+        <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1971</released_on>
+        <song_length rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">652</song_length>
     </owl:NamedIndividual>
     
 
@@ -1385,6 +1514,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Sunidhi_Chauhan">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Vocalist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Swan_Song_Records -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Swan_Song_Records">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Studio"/>
     </owl:NamedIndividual>
     
 
@@ -1418,6 +1555,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#The_Beatles">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1960</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liverpool, England, United Kingdom</origin>
     </owl:NamedIndividual>
     
 
@@ -1426,6 +1564,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#The_Endless_River">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Pink_Floyd"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Parlophone"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2014</released_on>
     </owl:NamedIndividual>
     
@@ -1435,6 +1575,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#The_Open_Door">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Evanesence"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Wind-up_Records"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2006</released_on>
     </owl:NamedIndividual>
     
@@ -1460,6 +1602,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#V">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Maroon_5"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Interscope"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2014</released_on>
     </owl:NamedIndividual>
     
@@ -1473,10 +1617,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Wind-up_Records -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Wind-up_Records">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Studio"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Zaalima -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Zaalima">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Song"/>
+        <artist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Arijit_Singh"/>
+        <in_language rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hindi"/>
+        <in_playlist rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Latest"/>
+        <bitrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">320 Kbps</bitrate>
+        <file_format rdf:datatype="http://www.w3.org/2001/XMLSchema#string">webm</file_format>
+        <is_instrumental rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_instrumental>
+        <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2017</released_on>
+        <song_length rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">172</song_length>
     </owl:NamedIndividual>
     
 
@@ -1502,6 +1662,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#3_Doors_Down">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
         <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1996</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escatawpa, Mississippi, U.S.</origin>
     </owl:NamedIndividual>
     
 
@@ -1510,6 +1671,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#X&amp;Y">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Album"/>
+        <album_artists rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Coldplay"/>
+        <recording_studio rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Parlophone"/>
         <released_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2005</released_on>
     </owl:NamedIndividual>
 </rdf:RDF>
