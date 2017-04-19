@@ -192,6 +192,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#shares_band_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#shares_band_with">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Person"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
