@@ -84,6 +84,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#equivalent_band -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#equivalent_band">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#featuring -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#featuring">
@@ -913,6 +924,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Chester_Bennigton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Chester_Bennigton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Vocalist"/>
+        <is_member_of rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Linkin_Park"/>
+        <shares_band_with rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Mike_Shinoda"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Chris_Martin -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Chris_Martin">
@@ -1110,6 +1131,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hybrid_Theory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Hybrid_Theory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
+        <band_members rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Chester_Bennigton"/>
+        <band_members rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Mike_Shinoda"/>
+        <equivalent_band rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Linkin_Park"/>
+        <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1999</formed_on>
+        <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agoura Hills, California, U.S.</origin>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/bikash/ontologies/2017/3/song#In_The_End -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#In_The_End">
@@ -1261,7 +1295,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Linkin_Park">
         <rdf:type rdf:resource="http://www.semanticweb.org/bikash/ontologies/2017/3/song#Band"/>
-        <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1996</formed_on>
+        <formed_on rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1999</formed_on>
         <origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agoura Hills, California, U.S.</origin>
     </owl:NamedIndividual>
     
