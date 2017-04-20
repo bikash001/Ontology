@@ -1,0 +1,2669 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#"
+     xml:base="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c"
+     xmlns:c="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c/1.0.0"/>
+        <rdfs:comment>ISO/IEC 9899:2011
+Information technology -- Programming languages -- C
+
+http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=57853</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#access -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#access">
+        <rdfs:comment>function relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#accessedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#accessedBy">
+        <rdfs:comment>variable relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#after">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#before"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#allocate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#allocate">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#allocatedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#allocatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#allocatedBy">
+        <rdfs:comment>array relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#before">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#call -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#call">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#calledBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#calledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#calledBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#consistsOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#deallocatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#deallocatedBy">
+        <rdfs:comment>array relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#declaredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#declaredBy">
+        <rdfs:comment>variable relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#definedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#definedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasAlignment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasAlignment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArgumentExpr -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArgumentExpr"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArgumentList -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArgumentList"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArrayBaseType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArrayBaseType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArrayRank -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArrayRank">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment>?</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasBaseType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasBaseType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasBody -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasChild">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasCondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasDeclaration -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasDeclaration">
+        <rdfs:comment>Domain: definition</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasDefinition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasDefinition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasElseBody -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasElseBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasExpression -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasExpression">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExpressionStatement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasFalseBody -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasFalseBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasForIncr -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasForIncr"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasForInit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasForInit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasForTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasForTest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasHiddenType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasHiddenType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasIndexExp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasIndexExp"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasInitStatement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasInitStatement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasInitialValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasInitialValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasInitializer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasInitializer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasKey -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasKey">
+        <rdfs:comment>case key:</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasLabelRef -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasLabelRef"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasLeftOperand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasLeftOperand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasChild"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasOperand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasOperand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasOperator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasOperator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParameterDeclList -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParameterDeclList">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionType"/>
+        <rdfs:comment>function relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParameterList -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParameterList"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasReturnType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasReturnType">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionType"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+        <rdfs:comment>function relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasRightOperand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasRightOperand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasChild"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasScope -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasScope"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasSelector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasSelector"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasSize"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasStatement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasStatement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasStorageClass -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasStorageClass">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment>variable relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasTarget"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasTrueBody -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasTrueBody"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+        <rdfs:comment>variable relation</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#next -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#next">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#after"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#prev"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#prev -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#prev">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#before"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#read -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#read">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#access"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#readBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#readBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#readBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#accessedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#referTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#referTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#referredBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#referredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#referredBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#write -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#write">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#access"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#writtenBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#writtenBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#accessedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Nth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Nth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NthArg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NthArg">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Nth"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NthPara -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NthPara">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Nth"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AddAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AddAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AddOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AddOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AdditiveOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AdditiveOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AddressOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AddressOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+        <rdfs:comment>&amp;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AndAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AndAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AndOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AndOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArrayDecl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArrayDecl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArraySub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArraySub">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixOp"/>
+        <rdfs:comment>[]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArrayType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArrayType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DerivedType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArrowExp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArrowExp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MemberRef"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignInitializer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignInitializer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Initializer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasInitialValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Auto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Auto">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#auto"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StorageClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicBlock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicBlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+        <rdfs:comment>Because objects of these types can be interpreted as numbers, they will be referred to as arithmetic types.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+        <rdfs:comment>overlap</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BitwiseANDOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BitwiseANDOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BitwiseOROp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BitwiseOROp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BitwiseShiftOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BitwiseShiftOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BitwiseXOROp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BitwiseXOROp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Block -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Block">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Scope"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BoolType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BoolType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BreakStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BreakStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#JumpStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CaseOptionStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CaseOptionStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CastOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CastOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharConst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharConst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Constant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharIntConv -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharIntConv">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Conversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ClassDeclaration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ClassDeclaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CommaOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CommaOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ComplexType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ComplexType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CompoundStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CompoundStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#consistsOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The body of a function definition is a compound statement.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ConditionalOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ConditionalOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Const -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Const">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TypeQualifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Constant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Constant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrimaryExpr"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ContinueStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ContinueStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#JumpStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Conversion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Conversion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+        <rdfs:comment>change to properties? e.g., convertableTo</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+        <rdfs:comment>Declarations specify the interpretation given to each identifier; they do not necessarily reserve storage associated with the identifier. Declarations that reserve storage are called definitions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DefualtOptionStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DefualtOptionStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DerivedType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DerivedType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DivAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DivAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DivOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DivOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DoWhileStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DoWhileStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IterationStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DotExp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DotExp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MemberRef"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DoubleType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DoubleType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EnumDecl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EnumDecl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EnumType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EnumType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EnumerationConst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EnumerationConst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Constant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EqualOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EqualOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EqualityOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EqualityOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EqualityOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExpressionList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExpressionList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExpressionStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExpressionStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Extern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Extern">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#extern"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StorageClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExternalDataDefinition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExternalDataDefinition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExternalDefinition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExternalDefinition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExternalDefinition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExternalFunctionDefinition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExternalFunctionDefinition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ExternalDefinition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasReturnType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatDoubleCharIntConv -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatDoubleCharIntConv">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Conversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatDoubleConv -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatDoubleConv">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Conversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatingConst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatingConst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Constant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ForInitStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ForInitStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ForStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ForStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IterationStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionCall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionCall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixOp"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#call"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasArgumentExpr"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDecl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDecl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasDefinition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDefinition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasParameter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasScope"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Scope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDefinition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDefinition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CompoundStatement"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Scope"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionParameterList -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionParameterList">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionRef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionRef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrimaryExpr"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#referTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDecl"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DerivedType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#GeqOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#GeqOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#RelationalOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Global -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Global">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ScopeStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#GotoStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#GotoStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#JumpStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#GreaterOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#GreaterOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#RelationalOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IOStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IOStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IfElseStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IfElseStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SelectionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IfStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IfStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SelectionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IndirectionOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IndirectionOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+        <rdfs:comment>*</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Initializer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Initializer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IntConst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IntConst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Constant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IntType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IntType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IterationStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IterationStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#JumpStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#JumpStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LabeledStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LabeledStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LeqOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LeqOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#RelationalOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LessOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LessOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#RelationalOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Library">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ListExp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ListExp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+        <rdfs:comment>?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalANDOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalANDOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalAndOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalAndOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalNegOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalNegOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalOROp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalOROp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalOrOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalOrOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LongType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LongType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IntType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Lvalue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Lvalue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#referTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An Object is a named region of storage; an lvalue is an expression referring to an object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MemberRef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MemberRef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ModAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ModAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ModOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ModOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MulAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MulAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MulOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MulOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MultiplicativeOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#MultiplicativeOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NeqOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NeqOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EqualityOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NullExpr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NullExpr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NullPointerType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NullPointerType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PointerType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NullStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NullStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#OnesComplementOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#OnesComplementOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+        <rdfs:comment>?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#OrAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#OrAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#OrOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#OrOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Parameter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PointerDecl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PointerDecl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PointerIntConv -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PointerIntConv">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Conversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PointerType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PointerType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DerivedType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixDecrementOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixDecrementOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixIncrementOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixIncrementOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixDecrementOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixDecrementOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixIncrementOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixIncrementOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixMinusOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixMinusOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixPlusOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixPlusOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrimaryExpr -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrimaryExpr">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+        <rdfs:comment>Primary expressions are identifiers, constants, strings, or expressions in parentheses.
+primary-expression 
+identifier 
+constant
+string 
+(expression)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReferenceType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReferenceType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DerivedType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Register -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Register">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#register"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StorageClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#RelationalOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#RelationalOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+        <rdfs:comment>? model as individual or subclass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReturnStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReturnStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#JumpStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Scope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Scope">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ScopeStatement"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ScopeStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ScopeStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SelectionStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SelectionStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShlAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShlAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShlOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShlOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShortType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShortType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IntType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShrAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShrAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShrOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShrOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Signed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Signed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SizeofOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SizeofOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Statement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Static -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Static">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#static"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StorageClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StorageClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StorageClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#String -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#String">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StringLiteral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StringLiteral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrimaryExpr"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StructureType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StructureType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DerivedType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StructureUnionDecl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StructureUnionDecl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SubAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SubAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SubOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SubOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SwitchStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SwitchStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#SelectionStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateClassDeclaration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateClassDeclaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ClassDeclaration"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateDeclaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateClassInstantiationDeclaration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateClassInstantiationDeclaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ClassDeclaration"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateInstantiation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateDeclaration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateDeclaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateFunctionDeclaration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateFunctionDeclaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDecl"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateDeclaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateFunctionInstantiationDeclaration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateFunctionInstantiationDeclaration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDecl"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateInstantiation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateInstantiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TemplateInstantiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TypeQualifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TypeQualifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TypedefDecl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TypedefDecl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnaryOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnionType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnionType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DerivedType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnknownClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnknownClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnknownType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnknownType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsigned -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsigned">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Value -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+        <rdfs:comment>SgXXXVal = constant?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CProgram"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#declaredBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#definedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasInitializer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Initializer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasScope"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Scope"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasSize"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasStorageClass"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StorageClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#hasType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>synonyms: object
+named location of storage</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDecl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDecl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDefinition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDefinition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Declaration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableRef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableRef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrimaryExpr"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#referTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VoidType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VoidType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BasicType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Volatile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Volatile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#TypeQualifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#WCharType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#WCharType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#WhileStatement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#WhileStatement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IterationStatement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#XorAssignOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#XorAssignOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignmentOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#XorOp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#XorOp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BinaryOp"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#isAssignedTo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#isAssignedTo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Expression"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#array_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#array_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ArrayType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#auto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#auto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Auto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#bool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#bool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#BoolType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#char -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#char">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#complex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#complex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ComplexType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#double -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#double">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DoubleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#enum_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#enum_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EnumType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#extern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#extern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Extern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#float -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#float">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FloatType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#function_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#function_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IntType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#long -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#long">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LongType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#long_double -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#long_double">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DoubleType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#long_long -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#long_long">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LongType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#null_pointer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#null_pointer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#NullPointerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#pointer_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#pointer_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PointerType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ref_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ref_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReferenceType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#register -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#register">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Register"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#short -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#short">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ShortType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_char -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_char">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#CharType"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Signed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_int -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_int">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Signed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_long -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_long">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Signed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_long_long -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_long_long">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Signed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_short -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#signed_short">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Signed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#static -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#static">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Static"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#string -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#string">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#String"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unknown_modifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unknown_modifier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsorted"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unknown_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unknown_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#UnknownType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_char -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_char">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsigned"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_int -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_int">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsigned"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_long -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_long">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsigned"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_long_long -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_long_long">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsigned"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_short -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unsigned_short">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Unsigned"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unspecified -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#unspecified">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#StorageClass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#void_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#void_type">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VoidType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#wchar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#wchar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#WCharType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#10:13,10:39 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#10:13,10:39">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReturnStatement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#12:13,12:42 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#12:13,12:42">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReturnStatement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:1,14:1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:1,14:1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionDefinition"/>
+        <hasBody rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:22,14:1"/>
+        <hasParameterDeclList rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:9,3:20"/>
+        <hasType rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pow</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:13,3:13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:13,3:13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:22,14:1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:22,14:1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Block"/>
+        <hasStatement rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:5,13:5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:9,3:13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:9,3:13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDecl"/>
+        <hasType rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:9,3:20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:9,3:20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionParameterList"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:13,4:13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:13,4:13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:15,6:5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:15,6:5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Block"/>
+        <hasStatement rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#5:9,5:17"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:5,13:5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:5,13:5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IfElseStatement"/>
+        <hasBody rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:15,6:5"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:8,4:13"/>
+        <hasElseBody rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#7:9,13:6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:8,4:13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:8,4:13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EqualOp"/>
+        <hasLeftOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:8,4:8"/>
+        <hasRightOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:13,4:13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:8,4:8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#4:8,4:8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#5:16,5:16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#5:16,5:16">
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#5:9,5:17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#5:9,5:17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReturnStatement"/>
+        <hasExpression rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#5:16,5:16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#7:9,13:6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#7:9,13:6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Block"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:9,8:35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:9,8:35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDefinition"/>
+        <hasType rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ModOp"/>
+        <hasLeftOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:12"/>
+        <hasRightOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:14,9:14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#EqualOp"/>
+        <hasLeftOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:14"/>
+        <hasRightOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:19,9:19"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:14,9:14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:14,9:14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:19,9:19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:19,9:19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:9,12:44 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:9,12:44">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IfElseStatement"/>
+        <after rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:9,8:35"/>
+        <hasBody rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#10:13,10:39"/>
+        <hasCondition rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:12,9:19"/>
+        <hasElseBody rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#12:13,12:42"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:comment>function relation</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/yue/ontologies/test1.c#i_decl">
+        <rdfs:label>i &apos;int&apos;</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AddressOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#IndirectionOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#LogicalNegOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#OnesComplementOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixDecrementOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PostfixIncrementOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixDecrementOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixIncrementOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixMinusOp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#PrefixPlusOp"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
