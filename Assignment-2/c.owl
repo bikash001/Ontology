@@ -2459,6 +2459,7 @@ named location of storage</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#12:13,12:42">
         <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ReturnStatement"/>
+        <hasExpression rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#12:20,12:42"/>
     </owl:NamedIndividual>
     
 
@@ -2531,10 +2532,101 @@ named location of storage</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:13,17:13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:13,17:13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasValue>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:5,17:14 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:5,17:14">
         <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDefinition"/>
+        <hasDefinition rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:9,17:13"/>
+        <hasType rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:9,17:13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:9,17:13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignInitializer"/>
+        <hasInitialValue rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:13,17:13"/>
+        <hasLeftOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:9,17:9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:9,17:9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:9,17:9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:12,19:17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:12,19:17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <NthArg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</NthArg>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;%d\n&quot;</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:12,19:27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:12,19:27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ListExp"/>
+        <hasExpression rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:12,19:17"/>
+        <hasExpression rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:20,19:27"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:20,19:27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:20,19:27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionCall"/>
+        <hasArgumentList rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:24.19:26"/>
+        <NthArg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NthArg>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pow</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:24,19:24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:24,19:24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <NthArg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</NthArg>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:24.19:26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:24.19:26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ListExp"/>
+        <hasExpression rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:24,19:24"/>
+        <hasExpression rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:26,19:26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:26,19:26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:26,19:26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <NthArg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NthArg>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasValue>
     </owl:NamedIndividual>
     
 
@@ -2544,6 +2636,8 @@ named location of storage</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:5,19:29">
         <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionCall"/>
         <after rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#17:5,17:14"/>
+        <hasArgumentList rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#19:12,19:27"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">printf</hasName>
     </owl:NamedIndividual>
     
 
@@ -2582,7 +2676,28 @@ named location of storage</rdfs:comment>
     <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:13,3:13 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:13,3:13">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Parameter"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:16,3:20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:16,3:20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDecl"/>
+        <hasDeclaration rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:20,3:20"/>
+        <hasType rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int"/>
+        <NthPara rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NthPara>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:20,3:20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:20,3:20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Parameter"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</hasName>
     </owl:NamedIndividual>
     
 
@@ -2600,7 +2715,9 @@ named location of storage</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:9,3:13">
         <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDecl"/>
+        <hasDeclaration rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:13,3:13"/>
         <hasType rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int"/>
+        <NthPara rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</NthPara>
     </owl:NamedIndividual>
     
 
@@ -2609,6 +2726,8 @@ named location of storage</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:9,3:20">
         <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionParameterList"/>
+        <hasDeclaration rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:16,3:20"/>
+        <hasDeclaration rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#3:9,3:13"/>
     </owl:NamedIndividual>
     
 
@@ -2664,7 +2783,8 @@ named location of storage</rdfs:comment>
     <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#5:16,5:16 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#5:16,5:16">
-        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasValue>
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasValue>
     </owl:NamedIndividual>
     
 
@@ -2682,6 +2802,85 @@ named location of storage</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#7:9,13:6">
         <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Block"/>
+        <hasStatement rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:9,8:35"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:13,8:20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:13,8:20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temp_res</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:13,8:34 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:13,8:34">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#AssignInitializer"/>
+        <hasInitialValue rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:24,8:34"/>
+        <hasLeftOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:13,8:20"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:24,8:34 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:24,8:34">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#FunctionCall"/>
+        <hasArgumentList rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:28,8:33"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pow</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:28,8:28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:28,8:28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+        <NthArg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</NthArg>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:28,8:33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:28,8:33">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#ListExp"/>
+        <hasExpression rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:28,8:28"/>
+        <hasExpression rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:31,8:33"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:31,8:31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:31,8:31">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Variable"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:31,8:33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:31,8:33">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#DivOp"/>
+        <hasLeftOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:31,8:31"/>
+        <hasRightOperand rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:33,8:33"/>
+        <NthArg rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</NthArg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:33,8:33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:33,8:33">
+        <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasValue>
     </owl:NamedIndividual>
     
 
@@ -2690,6 +2889,7 @@ named location of storage</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:9,8:35">
         <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#VariableDefinition"/>
+        <hasDefinition rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#8:13,8:34"/>
         <hasType rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#int"/>
     </owl:NamedIndividual>
     
@@ -2728,7 +2928,7 @@ named location of storage</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#9:14,9:14">
         <rdf:type rdf:resource="http://www.semanticweb.org/yzhao30/ontologies/2015/7/c#Literal"/>
-        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasValue>
+        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasValue>
     </owl:NamedIndividual>
     
 
